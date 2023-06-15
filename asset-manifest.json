@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/MyCalcky/static/css/main.4d9f473d.css",
+    "main.js": "/MyCalcky/static/js/main.ab8631eb.js",
+    "index.html": "/MyCalcky/index.html",
+    "main.4d9f473d.css.map": "/MyCalcky/static/css/main.4d9f473d.css.map",
+    "main.ab8631eb.js.map": "/MyCalcky/static/js/main.ab8631eb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4d9f473d.css",
+    "static/js/main.ab8631eb.js"
+  ]
+}
