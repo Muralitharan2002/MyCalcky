@@ -7,12 +7,14 @@ function App() {
   const [first, setfirst] = useState('');
   const [operator, setoperator] = useState('');
 
+  /*This feel function is get an input values in keyboard keys */
   const feel = (n) => {
     const value = n.target.getAttribute('data');
     if (value === '.' && Result.includes('.')) return;
     setresult(Result + value);
   };
 
+  /*This undo fuction is clear the each numbers one by one in display field */
   const undo = () => {
     setresult(String(Result).slice(0, -1));
     if (Result === '') {
@@ -24,12 +26,14 @@ function App() {
 
   };
 
+  /*This Allclear function is clear the full display in a single key*/
   const Allclear = () => {
     setresult('');
     setfirst('');
     setoperator('');
   };
 
+  /*This fuction is get the user perferred operator in keyboard keys*/
   const caloperat = (n) => {
     if (Result === '') return;
     if (first !== '') {
@@ -43,6 +47,7 @@ function App() {
 
   };
 
+  /*This calculate function is invoked by user*/
   const calculate = () => {
     let value = compute();
     if (value === undefined || value === null) return;
@@ -51,6 +56,7 @@ function App() {
     setoperator('');
   };
 
+  /*This compute function is calculated the gathered number with its user preferred operators... */
   const compute = () => {
     let finalresult;
     let firstnum = parseFloat(first);
@@ -77,7 +83,7 @@ function App() {
 
     <>
       <div className="calculator">
-        <h1 className="animated-text">Play with My Calci</h1>
+        <h1 className="animated-text">Play with My Calcky</h1>
       </div>
       <div className="container">
         <div className="App">
