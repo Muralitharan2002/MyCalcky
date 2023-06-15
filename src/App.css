@@ -129,6 +129,24 @@ second{
         
     }
   }
+  @media screen and (max-width: 371px) {
+    
+    .animated-text {
+        font-size: 30px;
+      }
+      .keyboard{
+        margin: 5px;
+        padding: 5px;
+        grid-column-gap: 14px;
+      }
+      .btn{
+        padding: 10px;
+        font-size: 15px;
+      }
+      .App{
+        padding-right: 0px;
+      }
+  }
   @media screen and (max-width: 711px) {
     .container{
         
